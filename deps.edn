@@ -18,6 +18,8 @@
                     :main-opts  ["-m" "cljfmt.main" "check"]}
            :kibit {:extra-deps {jonase/kibit {:mvn/version "0.1.8"}}
                    :main-opts ["-e" "(require,'[kibit.driver,:as,k])(k/external-run,[\"src\"],nil)"]}
+           :depot {:replace-deps {olical/depot {:mvn/version "2.3.0"}}
+                      :main-opts ["-m" "depot.outdated.main"]}
            ;;Run with `clj -X:yagni`
            :yagni {:extra-deps {venantius/yagni {:mvn/version "0.1.7"}}
                    :exec-fn yagni.core/run-yagni
