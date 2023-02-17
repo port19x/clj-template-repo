@@ -13,6 +13,6 @@
                       :main-opts ["-m" "eastwood.lint"]}
            :kibit {:extra-deps {jonase/kibit {:mvn/version "0.1.8"}}
                    :main-opts ["-e" "(require,'[kibit.driver,:as,k])(k/external-run,[\"src\"],nil)"]}
-           :depot {:replace-deps {olical/depot {:mvn/version "2.3.0"}}
-                      :main-opts ["-m" "depot.outdated.main"]}
+           :antq {:extra-deps {com.github.liquidz/antq {:mvn/version "2.2.992"}}
+                      :main-opts ["-m" "antq.core"]}
 }}
